@@ -4,7 +4,7 @@ import time
 from random import randint
 import unicornhat as unicorn
 from weather import Weather
-
+weather = Weather()
 
 def weatherUpdate():
     location = weather.lookup_by_location('tampere')
