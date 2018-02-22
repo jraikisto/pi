@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+import time
+from random import randint
+import unicornhat as unicorn
+from weather import Weather
+
+
+def weatherUpdate():
+    location = weather.lookup_by_location('tampere')
+    condition = location.condition()
+    print(condition)
+
+weatherUpdate()
