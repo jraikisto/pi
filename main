@@ -4,11 +4,18 @@ import time
 from random import randint
 import unicornhat as unicorn
 from weather import Weather
-weather = Weather()
+import pics.py
+
+unicorn.set_layout(unicorn.AUTO)
+unicorn.rotation(0)
+uniconr.brightness(0.175)
+uh_width,uh_height=unicorn.get_shape()
 
 def weatherUpdate():
+    weather = Weather()
     location = weather.lookup_by_location('tampere')
     condition = location.condition()
-    print(condition)
+    return condition
 
-weatherUpdate()
+wet = weatherUpdate()
+unicornhat.set_layout(sun)
