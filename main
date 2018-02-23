@@ -11,6 +11,9 @@ unicorn.rotation(0)
 uniconr.brightness(0.175)
 uh_width,uh_height=unicorn.get_shape()
 
+def drawPic(pic):
+    
+
 def weatherUpdate():
     weather = Weather()
     location = weather.lookup_by_location('tampere')
