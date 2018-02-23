@@ -8,7 +8,7 @@ import pics
 
 unicorn.set_layout(unicorn.AUTO)
 unicorn.rotation(0)
-uniconr.brightness(0.175)
+unicorn.brightness(0.175)
 uh_width,uh_height=unicorn.get_shape()
 
 def drawPic(pic):
@@ -24,3 +24,4 @@ def weatherUpdate():
 
 wet = weatherUpdate()
 drawPic(one)
+print("asdasdas")
