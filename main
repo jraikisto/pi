@@ -12,7 +12,9 @@ uniconr.brightness(0.175)
 uh_width,uh_height=unicorn.get_shape()
 
 def drawPic(pic):
-    
+    for h in range(height):
+        for w in range(width):
+            unicorn.setpixel(w, h, pic[w][h][1], pic[w][h][2], pic[w][h][3])
 
 def weatherUpdate():
     weather = Weather()
@@ -21,4 +23,4 @@ def weatherUpdate():
     return condition
 
 wet = weatherUpdate()
-unicornhat.set_layout(sun)
+drawPic(one)
