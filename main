@@ -4,7 +4,7 @@ import time
 from random import randint
 import unicornhat as unicorn
 from weather import Weather
-import pics
+from pics import Pics
 
 unicorn.set_layout(unicorn.AUTO)
 unicorn.rotation(0)
@@ -23,5 +23,4 @@ def weatherUpdate():
     return condition
 
 wet = weatherUpdate()
-drawPic(one)
-print("asdasdas")
+drawPic(Pics.one)
