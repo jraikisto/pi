@@ -14,7 +14,10 @@ uh_width,uh_height=unicorn.get_shape()
 def drawPic(pic):
     for h in range(uh_height):
         for w in range(uh_width):
-            unicorn.set_pixel(w, h, pic[w][h][1], pic[w][h][2], pic[w][h][3])
+            print(h)
+            print(w)
+            print("asd")
+            unicorn.set_pixel(w, h, pic[w][h][0], pic[w][h][1], pic[w][h][2])
 
 def weatherUpdate():
     weather = Weather()
