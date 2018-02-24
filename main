@@ -7,7 +7,7 @@ from weather import Weather
 from pics import Pics
 
 unicorn.set_layout(unicorn.AUTO)
-unicorn.rotation(0)
+unicorn.rotation(180)
 unicorn.brightness(0.175)
 uh_width,uh_height=unicorn.get_shape()
 
