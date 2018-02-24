@@ -18,6 +18,7 @@ def drawPic(pic):
             print(w)
             print("asd")
             unicorn.set_pixel(w, h, pic[w][h][0], pic[w][h][1], pic[w][h][2])
+    unicorn.show()
 
 def weatherUpdate():
     weather = Weather()
