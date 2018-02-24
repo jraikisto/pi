@@ -27,4 +27,6 @@ def weatherUpdate():
     return condition
 
 wet = weatherUpdate()
-drawPic(Pics.one)
+while True:
+    drawPic(Pics.one)
+    sleep(2)
