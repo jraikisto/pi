@@ -123,7 +123,6 @@ class Pics:
         ]
 
         numbers = [zero, one, two, three, four, five, six, seven, eight, nine, none]
-        print("")
         first = cronos.floor(num/10)
         if first == 0:
             first = 10
