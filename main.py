@@ -30,9 +30,8 @@ def weatherUpdate():
     return condition
 
 while True:
-    for n in nums:
-        for x in range(0, 99):
-            wet = weatherUpdate()
-            print(wet.text())
-            drawPic(Pics.retNum(x, 255, 255, 255))
-            sleep(1)
+    for x in range(0, 99):
+        wet = weatherUpdate()
+        print(wet.text())
+        drawPic(Pics.retNum(x, 255, 255, 255))
+        sleep(1)
