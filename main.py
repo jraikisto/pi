@@ -32,6 +32,9 @@ def weatherUpdate():
 while True:
     for x in range(0, 99):
         wet = weatherUpdate()
-        print(wet.text())
-        drawPic(Pics.retNum(x, 255, 255, 255))
+        temp = int(wet.temp())
+        if temp < 0:
+            drawPic(Pics.retNum(temp, 0, 153, 255))
+        else:
+            drawPic(Pics.retNum(temp, 255, 255, 204))
         sleep(1)
