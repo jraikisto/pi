@@ -1,4 +1,5 @@
 class Pics:
+    import math
     def retNum(num, r, g, b):
         none = [
             [[0, 0, 0], [0, 0, 0], [0, 0, 0],  [0, 0, 0]],
