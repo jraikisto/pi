@@ -17,7 +17,7 @@ def drawPic(pics):
     pic2 = pics[1]
     for h in range(uh_height):
         for w in range(uh_width):
-            if w < 5:
+            if w < 4:
                 unicorn.set_pixel(w, h, pic1[h][w][0], pic1[h][w][1], pic1[h][w][2])
             else:
                 unicorn.set_pixel(w, h, pic2[h][w][0], pic2[h][w][1], pic2[h][w][2])
@@ -33,5 +33,6 @@ while True:
     for x in range(0, 99):
         wet = weatherUpdate()
         print(wet.text())
+        print("asd")
         drawPic(Pics.retNum(x, 255, 255, 255))
         sleep(1)
