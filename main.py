@@ -22,7 +22,7 @@ def drawPic(pics):
             if w < 4:
                 unicorn.set_pixel(w, h, pic1[h][w][0], pic1[h][w][1], pic1[h][w][2])
             else:
-                unicorn.set_pixel(w, h, pic2[h][w][0], pic2[h][w][1], pic2[h][w][2])
+                unicorn.set_pixel(w, h, pic2[h][w-4][0], pic2[h][w-4][1], pic2[h][w-4][2])
     unicorn.show()
 
 def weatherUpdate():
