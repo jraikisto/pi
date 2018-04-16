@@ -32,7 +32,7 @@ def weatherUpdate():
 nums = [Pics.one, Pics.two, Pics.three]
 while True:
     for n in nums:
-        for x in range(0, 99)
+        for x in range(0, 99):
             wet = weatherUpdate()
             print(wet.text())
             drawPic(retNum(x, 255, 255, 255))
