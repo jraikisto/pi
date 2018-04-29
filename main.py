@@ -26,15 +26,16 @@ def drawPic(pics):
 def weatherUpdate():
     weather = Weather()
     location = weather.lookup_by_location('tampere')
+    if location == None:
+        return None
     condition = location.condition()
     return condition
 
 while True:
-    for x in range(0, 99):
-        wet = weatherUpdate()
-        temp = int(wet.temp())
-        if temp < 0:
-            drawPic(Pics.retNum(temp, 0, 153, 255))
-        else:
-            drawPic(Pics.retNum(temp, 255, 255, 204))
-        sleep(600)
+    wet = weatherUpdate()
+    temp = int(wet.temp()) if wet != None else -1
+    if temp < 0:
+        drawPic(Pics.retNum(temp, 0, 153, 255))
+    else:
+        drawPic(Pics.retNum(temp, 255, 255, 204))
+    sleep(600)
