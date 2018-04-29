@@ -38,4 +38,4 @@ while True:
         drawPic(Pics.retNum(temp, 0, 153, 255))
     else:
         drawPic(Pics.retNum(temp, 255, 255, 204))
-    sleep(600)
+    sleep(0.10)
